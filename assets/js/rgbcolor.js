@@ -9,6 +9,11 @@ var h1 = document.querySelector("h1");
 var newColors = document.getElementById("playagain");
 var easyButton = document.getElementById("easybtn");
 var hardButton = document.getElementById("hardbtn");
+var movieMessage = document.getElementById("moviemsg");
+var movieMessage1 = document.getElementById("moviemsg1");
+var movieQuotes = ["This movie sucks! Try Again","Best movie ever! Fin"];
+var imgContainer = document.getElementById("imgcontainer");
+var imgContainer1 = document.getElementById("imgcontainer1");
 
 
 newColors.addEventListener("click",function(){
@@ -25,6 +30,11 @@ newColors.addEventListener("click",function(){
      h1.style.background = "black";
      newColors.textContent = "New Colors";
      messageDisplay.textContent = "";
+     imgContainer.style.background = "white";
+     imgContainer1.style.background = "white";
+     movieMessage.textContent = "Enjoy the Show!";
+     movieMessage1.textContent = "Enjoy the Show!";
+
 
 });
 hardButton.addEventListener("click",function(){
@@ -74,10 +84,17 @@ for (var i =0; i<squares.length;i++){
           	oneColor(clickedColor);
           	h1.style.background = clickedColor;
           	newColors.textContent = "Play again";
+          	imgContainer.style.background = clickedColor;
+          	imgContainer1.style.background = clickedColor;
+          	movieMessage.textContent = movieQuotes[1];
+          	movieMessage1.textContent = movieQuotes[1];
           }
           else{
             this.style.background = "white";
           	messageDisplay.textContent="Try again";
+          	movieMessage.textContent = movieQuotes[0];
+          	movieMessage1.textContent = movieQuotes[0];
+
           }
 	});
 }

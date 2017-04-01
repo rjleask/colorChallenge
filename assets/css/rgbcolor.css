@@ -37,11 +37,29 @@ button:hover{
 	max-width:600px;
 	margin:0 auto;
 }
+#imgcontainer1{
+	float:right;
+	background-color: white;
+	width:20%;
+	height:10em;
+	margin-right: 2%;
+	margin-top: 10%;
+}
+#imgcontainer{
+	float:left;
+	background-color: white;
+	width:20%;
+	height:10em;
+	margin-left: 2%;
+	margin-top: 10%;
+}
+
 #stripe{
 	background-color: gold;
 	height:30px;
 	text-align: center;
 }
+
 .selected{
 	background: black;
 }
@@ -51,6 +69,22 @@ button:hover{
 #message{
 	display: inline-block;
 	width: 20%;
+}
+#colortv{
+	max-width:100%;
+	object-fit: contain;
+}
+#moviemsg1{
+	margin-bottom:-15%;
+	text-align: center;
+	font-family: 'Josefin Slab', serif;
+	font-weight: bold;
+}
+#moviemsg{
+	margin-bottom:-15%;
+	text-align: center;
+	font-family: 'Josefin Slab', serif;
+	font-weight: bold;
 }
 span#message{
 	font-weight: bold;
