@@ -90,3 +90,12 @@ span#message{
 	font-weight: bold;
 
 }
+
+@media (max-width: 1090px){
+	#imgcontainer{
+		display: none;
+	}
+	#imgcontainer1{
+		display: none;
+	}
+}
